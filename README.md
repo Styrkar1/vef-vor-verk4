@@ -1,1 +1,11 @@
-# vef-vor-verk4
+# Verk 4 spurningar
+
+1.	Það getur verið flókið að búa til App með MVC og það er ekki sérstaklega gott að nota það með litlar vefsíður af því að það mun frekar hægja á vefsíðuni. Og síðan getur verið erfitt að debugga kóðan ef sá sem er að því hefur ekki þokkalegan skilning á MVC. Síðan með stærri vefsíður, ef það eru öðruvísi lið að vinna á UI og model classes þurfa þá liðin að vinna á sama hraða til að geta virkað yfir höfuð. Og persónulega  finnst mér að maður þarf að láta in mikið meira átak en maður fær út úr því, ekki nema maður þarf að fá þenna smá auka hraða í mjög stórri vefsíðu.
+
+2.	Routing er þegar server velur eina eða margar leiðir til að koma upplýsingum frá einum stað til hins. Oft fara þessar upplýsingar yfir marga routers til að komast á sinn stað. Það eru margar gerðir af routing t.d IP routing, Static Routing og Dynamic Routing, fyrsta virkar þannig að router getur tekið inn packet frá öðrum router sem er ekki með sama subnet með því að bæti við gateway inní sig og með þessu er hægt að senda packet langar leiðir í gegnum marga routers sem eru ekki endilega á sama subnet.
+
+3.	Static Routing er þegar maður bætir við IP routing upplýsingum sjálfur inná routing töfluna í stað þess að hafa tölfunar gera það.
+
+4.	Dynamic routing er þegar routers læra nýar og betri leiðir til að tengja sjálfa sig, og á meðan routeranir eru að þessu breyta þeir um IP sjálfir, þetta er voðanlega gott fyrir stór fyritæki sem eru með mikið af routerum og fyrir netið sjálft yfir höfuð.
+
+5.	Front controller er design pattern þar sem einn hlutur ber ábyrgð á því að taka á móti öllum beiðnum til aðra hluta af appi. Þeta býr til einn punkt af sameiginlegri virkni sem restin af appinu þarf. Nokkrir hlutir sem nota Front Controllers eru „Templating“, „Routing“ og öriggy. Það getur verið gott að nota svona því að þegar maður þarf að breyta högun þessum functions þarf bara að breyta smá hluta af appinu. Í vefsíðum eru öll beiðni fyrir domain tekin af front controller. Notkun á front controller væri T.d væri að nota htaccess og ef request frá server hefur /help mun vefsíðan kalla á help.php en ef serverinn kallar á /calendar mun vefsíðan kalla á calendar.php og loksins ef hvorugt virkar mun vefsíðan bara sýna notfound.php
